@@ -1,0 +1,32 @@
+@font-face {
+
+}
+@import '_reboot.scss';
+@import '_media.scss';
+@import 'blocks/navigation';
+@import 'blocks/banner';
+
+
+html {
+    font-size: 14px;
+}
+
+* {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s linear;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+

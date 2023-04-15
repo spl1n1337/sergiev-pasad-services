@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+.header {
+
+    &__bot {
+        background-color: wheat;
+        padding: 1rem 0;
+    }
+}
+.container {
+}
+.nav {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-item a {
+            font-size: 1.125rem;
+        }
+    }
+
+}
