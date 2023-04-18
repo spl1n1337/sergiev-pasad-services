@@ -1,10 +1,20 @@
-@font-face {
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Inter:wght@400;700&family=Manrope:wght@500&family=Noto+Sans:wght@500&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+$blue: #024E68;
+$orange: #ff8300;
+$gray: #f8f4f4;
+$d-gray: #E9ECF0;
+$accent: #1428a0;
+$accent_bright: #4961f2;
+$accent_light: #101d6c;
+$rgba-blue: rgba(2, 161, 227, .9);
+$rgba_light: rgba(2, 161, 227, .25);
 @import '_reboot.scss';
 @import '_media.scss';
 @import 'blocks/navigation';
 @import 'blocks/banner';
+@import 'blocks/aside';
+@import 'blocks/content';
+@import 'blocks/footer';
 
 
 html {
@@ -13,16 +23,18 @@ html {
 
 * {
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.2;
     font-weight: 400;
     margin: 0;
     padding: 0;
-    transition: all 0.3s linear;
+    transition: all 0.2s ease;
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     position: relative;
+    background-color: #FFF;
 }
 .container {
     max-width: 1200px;

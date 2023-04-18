@@ -3,7 +3,10 @@
 .header {
 
     &__bot {
-        background-color: wheat;
+        background: linear-gradient(to right, $orange, #ffa23f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        box-shadow:rgba(0,0,0,.4) 0 2px 4px, rgba(0,0,0,.3) 0px 2px 0px -3px, rgba(0,0,0,.2) 0 0 0 inset;
+        animation: gradient 2s infinite linear;
+        background-size: 400%;
         padding: 1rem 0;
     }
 }
@@ -17,7 +20,21 @@
         align-items: center;
         &-item a {
             font-size: 1.125rem;
+            color: white;
         }
     }
 
+}
+
+
+@keyframes gradient {
+0% {
+    background-position: 80% 0%;
+}
+50% {
+    background-position: 0% 100%;
+}
+100% {
+    background-position: 80% 0%;
+}
 }
