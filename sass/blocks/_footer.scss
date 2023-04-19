@@ -1,6 +1,7 @@
 @import '../variables';
 
 .footer {
+    margin-top: 5rem;
     background-color: $d-gray;
     width: 100%;
     &__banner {
@@ -11,9 +12,9 @@
     }
     
     &__container {
-        padding: 1rem 2rem 2rem;
         display: flex;
         justify-content: space-between;
+        padding: 2rem !important;
     }
     .services__item, .contacts__list__item {
         display: block;
@@ -30,12 +31,17 @@
         }
     }
     &__col {
+        &.services__col {
+            display: flex;
+            flex-wrap: wrap;
+        }
         &__title {
             color: $blue;
             font-weight: 600;
             font-size: 1.42rem;
             margin-bottom: 1.14rem;
             display: block;
+            flex: 0 0 100%;
             &:hover {
                 color: $orange;
                 text-decoration: underline;
@@ -46,9 +52,7 @@
     .services {
 
         &__list {
-            display: flex;
-            flex-wrap: wrap;
-
+            flex: 0 0 50%;
         }
     
         &__item {

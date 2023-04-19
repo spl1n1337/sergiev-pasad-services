@@ -15,7 +15,8 @@ $rgba_light: rgba(2, 161, 227, .25);
 @import 'blocks/aside';
 @import 'blocks/content';
 @import 'blocks/footer';
-
+@import 'blocks/prices';
+@import 'blocks/form';
 
 html {
     font-size: 14px;
@@ -42,3 +43,65 @@ body {
     padding: 0 2rem;
 }
 
+.zakaz {
+    .hero__content {
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .hero__img {
+        display: flex;
+        justify-content: center;
+        img {
+            width: auto;
+        }
+    }
+    margin-bottom: 10rem;
+
+}
+
+.map__wrapper {
+    border: 2px solid $orange;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.descr__list {
+    padding-left: 2rem;
+    li {
+        font-size: 1.5rem;
+        color: $blue;
+        cursor: pointer;
+        a {
+            display: block;
+            width: 100%;
+            font-size: inherit;
+            color: inherit;
+            font-weight: inherit;
+        }
+        &::before {
+            content: '◉';
+            font-size: 1rem;
+            display: block;
+            transform: translate(-20px, 20px);
+        }
+    }
+}
+
+.unit__page {
+    img {
+        // width: auto;
+    }
+    .hero__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        .hero__title {
+            flex: 0 0 50%;
+            margin-bottom: 2rem;
+        }
+        .unit__img {
+            flex: 0 0 50%;
+            margin-bottom: 2rem;
+        }
+    }
+}

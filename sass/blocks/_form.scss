@@ -1,0 +1,95 @@
+@import '../variables';
+
+
+.form-block {
+    width: 100%;
+    p {
+        color: $blue;
+        opacity: 0.6;
+        a {
+            color: inherit;
+            opacity: 1;
+            font-weight: 600;
+        }
+    }
+    input:focus, input:active, textarea:focus, textarea:active {
+        border-color: $orange;
+        background: $rgba_light;
+    }
+    .cta {
+        float: right;
+    }
+}
+.client-name-container {
+}
+.failures {
+		&__form-inputs {
+            box-sizing: border-box;
+            max-height: 1000000px;
+            resize: none;
+            padding: 0 5px 0 10px;
+            margin-bottom: 15px;
+            background-color: #ebebeb;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            font-family: "PT Sans";
+            color: black;
+            height: 40px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            width: 48.5%;
+            margin-right: 0;
+            &.__name {
+                box-sizing: border-box;
+                max-height: 1000000px;
+                resize: none;
+                padding: 0 5px 0 10px;
+                margin-bottom: 15px;
+                background-color: #ebebeb;
+                border: 1px solid #dbdbdb;
+                border-radius: 3px;
+                font-family: "PT Sans";
+                color: black;
+                height: 40px;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+                width: 49%;
+                margin-right: 2%;
+            }
+            &.__comment {
+                width: 100%;
+                box-sizing: border-box;
+                max-height: 1000000px;
+                resize: none;
+                padding: 0 5px 0 10px;
+                width: 100%;
+                margin-bottom: 15px;
+                background-color: #ebebeb;
+                border: 1px solid #dbdbdb;
+                border-radius: 3px;
+                font-family: "PT Sans";
+                color: black;
+                height: 75px;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+                padding-top: 5px;
+            }
+        }
+}
+.client-phone-container {
+}
+.corp-name-container {
+}
+.green-btn {
+}
+.nav-top-menu {
+
+		&__phone {}
+}
+.white-number {
+}
+.hover {
+}
