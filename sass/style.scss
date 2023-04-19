@@ -61,17 +61,17 @@ body {
 
 .map__wrapper {
     border: 2px solid $orange;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     margin: 2rem 0;
 }
 
 .descr__list {
     padding-left: 2rem;
+    margin-bottom: 2rem;
     li {
         font-size: 1.5rem;
         color: $blue;
-        cursor: pointer;
         a {
             display: block;
             width: 100%;
@@ -95,7 +95,7 @@ body {
     .hero__wrapper {
         display: flex;
         flex-wrap: wrap;
-        .hero__title {
+        .unit__descr {
             flex: 0 0 50%;
             margin-bottom: 2rem;
         }
@@ -103,5 +103,43 @@ body {
             flex: 0 0 50%;
             margin-bottom: 2rem;
         }
+    }
+}
+
+.italics {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    font-style: italic;
+}
+.underline {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    text-decoration: underline;
+}
+
+.descr__list__order {
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    li {
+        font-size: 1.5rem;
+        color: $blue;
+        list-style: auto;
+        padding-bottom: 1rem;
+        a {
+            display: block;
+            width: 100%;
+            font-size: inherit;
+            color: inherit;
+            font-weight: inherit;
+        }
+    }
+}
+
+.all__services {
+    .descr__list {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
     }
 }

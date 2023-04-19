@@ -24,6 +24,11 @@
         line-height: 1.1;
         color: $blue;
         width: 80%;
+        .color-text {
+            font-size: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
     }
 
     &__content {
@@ -47,6 +52,7 @@
         color: $blue;
         line-height: 1.35;
         margin-right: 1rem;
+        margin-bottom: 2rem;
     }
 }
 .cta {
@@ -104,13 +110,20 @@
     color: $blue;
     margin-bottom: 2rem;
 }
+.h3-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $blue;
+    margin-bottom: 1rem;
+}
+
 .types {
     margin-top: 3rem;
     margin-bottom: 1.5rem;
     padding: 3rem 5vmax;
     background: rgba(248, 244, 244, 0.4);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-radius: 10px;
+    border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem 2rem;
