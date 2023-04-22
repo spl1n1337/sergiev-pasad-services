@@ -1,3 +1,5 @@
+@import './variables';
+
 // ------------------------------------------------------------- >1250px -------------------------------------------------------------
 @media (max-width: 1250px) {
 
@@ -7,22 +9,197 @@
     html {
         font-size: 12px !important;
     }
+    .content__main {
+      margin-left: 1.5rem;
+    }
+    .cta {
+      height: 38px;
+      line-height: 38px;
+    }
 }
 // ------------------------------------------------------------- 1024px -------------------------------------------------------------
 @media (max-width: 1024px) {
     html {
       font-size: 10px !important;
     }
+    .hero {
+      &__content {
+        flex-direction: column;
+      }
+      &__img {
+        min-width: auto;
+      }
+      &__text {
+        width: 100%;
+      }
+      &__title {
+        width: 100%;
+      }
+    }
+    .cta.cta__small {
+      height: 20px;
+      line-height: 20px;
+      width: auto;
+    }
+    .content .aside-block {
+      width: 18%;
+      min-width: auto;
+    }
+
 }
 // ------------------------------------------------------------- 768px -------------------------------------------------------------
   @media (max-width: 768px) {
     html {
-      font-size: 9px !important;
+      // font-size: 9px !important;
     }
+    .container {
+      padding: 0 1rem;
+    }
+    .logo__img {
+      width: 40px;
+    }
+    .header__descr {
+      display: none;
+    }
+    .nav {
+      display: none;
+    }
+    .header__bot {
+      height: 40px;
+    }
+    .content .aside-block {
+      width: 22%;
+    }
+    .content__main {
+      width: 75%;
+    }
+    .header__bot {
+      position: sticky;
+      top: 0;
+      background: $orange;
+      z-index: 10;
+    }
+    .menu__mobile {
+      position: absolute;
+      right: 1rem;
+      height: 21px;
+      transition: all 0.3s ease-in-out;
+      div {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        margin-top: 4px;
+      }
+    }
+    .menu__mobile.mob__active {
+      div {
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(1) {
+          transform: translateY(7px)rotate(44deg);
+        }
+        &:nth-child(3) {
+          transform: translateY(-7px)rotate(135deg);
+        }
+      }
+    }
+    .header__bot.header__active {
+      height: 100vh;
+      .container {
+        height: 100%;
+        .nav {
+          display: block;
+          height: 100%;
+          .nav__list {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            padding-bottom: 10rem;
+          }
+        }
+      }
+    }
+    .types {
+      grid-template-columns: repeat(1,1fr);
+      &__img {
+        width: 100px;
+      }
+    }
+    .benefit-block {
+      flex-direction: column;
+      .benefit__item:not(:last-child) {
+        margin-bottom: 2rem;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+    .footer {
+      &__container {
+        flex-direction: column;
+      }
+      &__col {
+        margin-bottom: 2rem;
+      }
+    }
+    .copyright__wrapper {
+      margin-bottom: 1.3rem;
+    }
+    table.priceTable tr td:nth-child(1) {
+      padding: 0 1rem;
+      width: auto;
+    }
+    table.priceTable td:nth-child(4) {
+      width: max-content;
+    }
+    table.priceTable td:nth-child(2) {
+      width: 100px;
+  }
+  .order-btn {
+    line-height: 30px;
+    padding: 0 10px;
+  }
+  .failures__form-inputs.__name {
+    width: 100%;
+    margin-right: 0;
+  }
+  .failures__form-inputs {
+    width: 100%;
+    margin-right: 0;
+  }
+  .zakaz .hero__img img {
+    width: 100%;
+  }
+  .block-container .cta.left {
+    margin-right: 1rem;
+  }
+  .descr__list li::before {
+    transform: translate(-20px,1.5rem);
+  }
 }
 // ------------------------------------------------------------- > 481px -------------------------------------------------------------
 @media (max-width: 480px) {
     html {
         font-size: 8px !important;
     }
+    .aside-block {
+      display: none;
+    }
+    .content__main {
+      width: 100%;
+      margin-left: 0;
+    }
+    .descr__list li::before {
+      transform: translate(-1.5rem,1.5rem);
+  }
+  .unit__page .hero__wrapper .unit__descr {
+    flex: 0 0 100%;
+  }
+  .unit__page .hero__wrapper .unit__img {
+    flex: 0 0 100%;
+  }
 }

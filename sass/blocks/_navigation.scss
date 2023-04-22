@@ -1,20 +1,19 @@
 @import './variables.scss';
 
 .header {
-
+    position: relative;
     &__bot {
         background: linear-gradient(to right, $orange, #ffa23f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         box-shadow:rgba(0,0,0,.4) 0 2px 4px, rgba(0,0,0,.3) 0px 2px 0px -3px, rgba(0,0,0,.2) 0 0 0 inset;
         animation: gradient 2s infinite linear;
         background-size: 400%;
         padding: 1rem 0;
+        margin-bottom: 3rem;
     }
-    margin-bottom: 3rem;
 }
 .container {
 }
 .nav {
-
     &__list {
         display: flex;
         justify-content: space-between;

@@ -9,7 +9,6 @@ $accent_light: #101d6c;
 $rgba-blue: rgba(2, 161, 227, .9);
 $rgba_light: rgba(2, 161, 227, .25);
 @import '_reboot.scss';
-@import '_media.scss';
 @import 'blocks/navigation';
 @import 'blocks/banner';
 @import 'blocks/aside';
@@ -143,3 +142,5 @@ body {
         grid-template-columns: repeat(3,1fr);
     }
 }
+
+@import '_media.scss';
