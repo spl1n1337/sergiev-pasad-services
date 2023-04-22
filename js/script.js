@@ -9,11 +9,12 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    const form = document.querySelector('form');
+    const form = document.querySelector('form'),
+          thankyou = document.querySelector('.thankyou');
 
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
-        const phoneInput = element.querySelector('[name="client-phone"]');
+        const phoneInput = form.querySelector('[name="client-phone"]');
         const phoneRegex = /^((\+7|7|8)+([0-9]){10})$/;
         if(!phoneRegex.test(phoneInput.value)){
             alert("Пожалуйста, введите корректный телефонный номер РФ");
@@ -26,9 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
           },
-          body: new URLSearchParams(new FormData(element)).toString(),
+          body: new URLSearchParams(new FormData(form)).toString(),
         });
-        console.log(new FormData(element));
         const data = await response.json();
         
         if (data.status === "success") {
@@ -36,8 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
           console.log(data.status)
           setTimeout(() => {
             thankyou.style.display = "none";
-            modal.style.display = "none";
-            element.reset();
+            form.reset();
           }, 2000);
         } else {
           alert(data.message);
