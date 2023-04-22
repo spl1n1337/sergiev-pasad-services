@@ -33,7 +33,12 @@
         }
     }
     &-banner {
-        margin-bottom: 1rem;
+        img {
+            margin-bottom: 1rem;
+        }
+        .hero__descr {
+            color: $orange;
+        }
     }
 }
 .content-list {

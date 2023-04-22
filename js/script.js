@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
         
         if (data.status === "success") {
           thankyou.style.display = "block";
-          console.log(data.status)
+          console.log(data.status);
           setTimeout(() => {
             thankyou.style.display = "none";
             form.reset();
