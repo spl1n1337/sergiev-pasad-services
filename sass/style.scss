@@ -144,4 +144,27 @@ body {
     }
 }
 
+.unit-descr {
+
+    &__img {
+        // height: 250px;
+        width: auto;
+        float: left;
+        margin-right: 2rem;
+    }
+    .benefit__item {
+        margin: 1.5rem 0;
+    }
+    &__text {
+        font-size: 1.2rem;
+    }
+}
+.benefit {
+
+    &__item {}
+
+    &__descr {}
+}
+
+
 @import '_media.scss';

@@ -45,7 +45,6 @@
       width: 18%;
       min-width: auto;
     }
-
 }
 // ------------------------------------------------------------- 768px -------------------------------------------------------------
   @media (max-width: 768px) {
@@ -174,11 +173,11 @@
   .zakaz .hero__img img {
     width: 100%;
   }
-  .block-container .cta.left {
-    margin-right: 1rem;
-  }
   .descr__list li::before {
     transform: translate(-20px,1.5rem);
+  }
+  .unit-descr__img {
+    width: 50%;
   }
 }
 // ------------------------------------------------------------- > 481px -------------------------------------------------------------
@@ -201,5 +200,12 @@
   }
   .unit__page .hero__wrapper .unit__img {
     flex: 0 0 100%;
+  }
+  .unit__page .hero__title {
+    margin-bottom: 1.5rem;
+  }
+  .unit-descr__img {
+    width: 100%;
+    float: none;
   }
 }
